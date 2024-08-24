@@ -11,6 +11,8 @@
 		26B32BC82C7A2F6B006428C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B32BC72C7A2F6B006428C9 /* ContentView.swift */; };
 		26B32BCA2C7A2F6C006428C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B32BC92C7A2F6C006428C9 /* Assets.xcassets */; };
 		26B32BCD2C7A2F6C006428C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B32BCC2C7A2F6C006428C9 /* Preview Assets.xcassets */; };
+		26B32BD42C7A2F83006428C9 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B32BD32C7A2F83006428C9 /* CustomARView.swift */; };
+		26B32BD62C7A2FA0006428C9 /* CustomARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B32BD52C7A2FA0006428C9 /* CustomARViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		26B32BC72C7A2F6B006428C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		26B32BC92C7A2F6C006428C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26B32BCC2C7A2F6C006428C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26B32BD32C7A2F83006428C9 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		26B32BD52C7A2FA0006428C9 /* CustomARViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARViewRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				26B32BC52C7A2F6B006428C9 /* First_AR_AppApp.swift */,
 				26B32BC72C7A2F6B006428C9 /* ContentView.swift */,
+				26B32BD32C7A2F83006428C9 /* CustomARView.swift */,
+				26B32BD52C7A2FA0006428C9 /* CustomARViewRepresentable.swift */,
 				26B32BC92C7A2F6C006428C9 /* Assets.xcassets */,
 				26B32BCB2C7A2F6C006428C9 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				26B32BC82C7A2F6B006428C9 /* ContentView.swift in Sources */,
+				26B32BD42C7A2F83006428C9 /* CustomARView.swift in Sources */,
 				26B32BC62C7A2F6B006428C9 /* First_AR_AppApp.swift in Sources */,
+				26B32BD62C7A2FA0006428C9 /* CustomARViewRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
