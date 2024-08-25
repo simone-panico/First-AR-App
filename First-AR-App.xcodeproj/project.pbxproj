@@ -13,6 +13,8 @@
 		26B32BCD2C7A2F6C006428C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B32BCC2C7A2F6C006428C9 /* Preview Assets.xcassets */; };
 		26B32BD42C7A2F83006428C9 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B32BD32C7A2F83006428C9 /* CustomARView.swift */; };
 		26B32BD62C7A2FA0006428C9 /* CustomARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B32BD52C7A2FA0006428C9 /* CustomARViewRepresentable.swift */; };
+		26B32BD92C7A3A23006428C9 /* ARAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B32BD82C7A3A23006428C9 /* ARAction.swift */; };
+		26B32BDB2C7A3A67006428C9 /* ARManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B32BDA2C7A3A67006428C9 /* ARManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		26B32BCC2C7A2F6C006428C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		26B32BD32C7A2F83006428C9 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 		26B32BD52C7A2FA0006428C9 /* CustomARViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARViewRepresentable.swift; sourceTree = "<group>"; };
+		26B32BD82C7A3A23006428C9 /* ARAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAction.swift; sourceTree = "<group>"; };
+		26B32BDA2C7A3A67006428C9 /* ARManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +59,8 @@
 		26B32BC42C7A2F6B006428C9 /* First-AR-App */ = {
 			isa = PBXGroup;
 			children = (
+				26B32BD72C7A33BE006428C9 /* Feature Targets */,
 				26B32BC52C7A2F6B006428C9 /* First_AR_AppApp.swift */,
-				26B32BC72C7A2F6B006428C9 /* ContentView.swift */,
-				26B32BD32C7A2F83006428C9 /* CustomARView.swift */,
-				26B32BD52C7A2FA0006428C9 /* CustomARViewRepresentable.swift */,
 				26B32BC92C7A2F6C006428C9 /* Assets.xcassets */,
 				26B32BCB2C7A2F6C006428C9 /* Preview Content */,
 			);
@@ -71,6 +73,18 @@
 				26B32BCC2C7A2F6C006428C9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		26B32BD72C7A33BE006428C9 /* Feature Targets */ = {
+			isa = PBXGroup;
+			children = (
+				26B32BD82C7A3A23006428C9 /* ARAction.swift */,
+				26B32BC72C7A2F6B006428C9 /* ContentView.swift */,
+				26B32BD32C7A2F83006428C9 /* CustomARView.swift */,
+				26B32BD52C7A2FA0006428C9 /* CustomARViewRepresentable.swift */,
+				26B32BDA2C7A3A67006428C9 /* ARManager.swift */,
+			);
+			path = "Feature Targets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +158,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				26B32BC82C7A2F6B006428C9 /* ContentView.swift in Sources */,
+				26B32BD92C7A3A23006428C9 /* ARAction.swift in Sources */,
 				26B32BD42C7A2F83006428C9 /* CustomARView.swift in Sources */,
 				26B32BC62C7A2F6B006428C9 /* First_AR_AppApp.swift in Sources */,
+				26B32BDB2C7A3A67006428C9 /* ARManager.swift in Sources */,
 				26B32BD62C7A2FA0006428C9 /* CustomARViewRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +299,7 @@
 				DEVELOPMENT_TEAM = SGC6CXQ529;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to show AR View";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,6 +329,7 @@
 				DEVELOPMENT_TEAM = SGC6CXQ529;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to show AR View";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
