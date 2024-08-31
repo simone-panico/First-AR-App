@@ -49,6 +49,9 @@ class CustomARView: ARView {
             
             // Place Spehre
             placeObject(object: spehre, location: worldPos)
+            
+            // Install Gestures
+            installGesures(object: spehre)
         }
         
     }
@@ -89,14 +92,10 @@ class CustomARView: ARView {
         self.session.run(configuration)
     }
     
-    func placeBlock(ofColor color: Color) {
-        let block = MeshResource.generateBox(size: 1)
-        let material = SimpleMaterial(color: UIColor(color), isMetallic: false)
-        let entity = ModelEntity(mesh: block, materials: [material])
+    func installGesures(object: ModelEntity) {
+        object.generateCollisionShapes(recursive: true)
         
-        let anchor = AnchorEntity(plane: .horizontal)
-        anchor.addChild(entity)
-        scene.addAnchor(anchor)
+        self.installGestures([.all], for: object)
     }
     
     
